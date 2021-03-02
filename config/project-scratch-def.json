@@ -1,0 +1,14 @@
+{
+  "orgName": "krzys company",
+  "edition": "Developer",
+  "hasSampleData": false,
+  "features": [],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}
