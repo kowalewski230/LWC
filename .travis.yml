@@ -1,6 +1,8 @@
 language: ruby
 
 cache: false
+only:
+  - master
 env:
 - URL=https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
 before_install:
