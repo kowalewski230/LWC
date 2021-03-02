@@ -1,0 +1,7 @@
+/.sfdx/
+/.idea/
+/.vscode/
+/.eslintignore
+/.forceignore
+/.prettierignore
+/.prettierrc
