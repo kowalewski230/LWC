@@ -22,4 +22,4 @@ before_install:
 script:
   - sfdx force:source:convert -d outputdir
   - sfdx force:mdapi:deploy -d outputdir -u $USERNAME
-  - sfdx force:mdapi:deploy:report
+  - sfdx force:mdapi:deploy:report -u $USERNAME
