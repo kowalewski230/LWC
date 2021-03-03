@@ -1,0 +1,16 @@
+<!--
+ - Created by krzys on 03/03/2021.
+ -->
+
+<!-- Account Finder -->
+<template>
+  <lightning-input
+    type="number"
+    label="Annual Revenue"
+    formatter="currency"
+    value={annualRevenue}
+    onchange={handleChange}
+  >
+  </lightning-input>
+  <lightning-button label="Reset" onclick={reset}> </lightning-button>
+</template>
