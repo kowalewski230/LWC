@@ -1,0 +1,13 @@
+<template>
+  <lightning-card>
+    {numberOfEmployees}
+    <lightning-input
+      type="number"
+      label="Number of Employees"
+      value={numberOfEmployees}
+      onchange={handleChange}
+    >
+    </lightning-input>
+    <lightning-button label="Reset" onclick={reset}> </lightning-button>
+  </lightning-card>
+</template>
