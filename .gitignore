@@ -5,3 +5,5 @@
 /.forceignore
 /.prettierignore
 /.prettierrc
+node_modules/
+
