@@ -3,6 +3,7 @@
  */
 
 import { LightningElement, wire } from 'lwc';
+import { reduceErrors } from 'c/ldsUtils';
 import FIRSTNAME from '@salesforce/schema/Contact.FirstName';
 import LASTNAME from '@salesforce/schema/Contact.LastName';
 import EMAIL from '@salesforce/schema/Contact.Email';
@@ -15,5 +16,9 @@ const COLUMNS = [
 export default class AccountList extends LightningElement {
     columns = COLUMNS;
     @wire(getContacts)
-    accounts;
+    contacts;
+    get errors() {
+        return (this.contacts.error) ?
+            reduceErrors(this.contacts.error) : [];
+    }
 }
