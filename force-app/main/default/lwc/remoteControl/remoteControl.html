@@ -1,0 +1,16 @@
+<!--
+ - Created by krzys on 03/03/2021.
+ -->
+
+<!-- Remote Control -->
+<template>
+  <lightning-card title="Remote Control" icon-name="action:change_record_type">
+    <c-controls
+      class="slds-show slds-is-relative"
+      onadd={handleIncrement}
+      onsubtract={handleDecrement}
+      onmultiply={handleMultiply}
+    >
+    </c-controls>
+  </lightning-card>
+</template>
