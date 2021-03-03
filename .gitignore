@@ -2,7 +2,6 @@
 /.idea/
 /.vscode/
 /.eslintignore
-/.forceignore
 /.prettierignore
 /.prettierrc
 node_modules/
