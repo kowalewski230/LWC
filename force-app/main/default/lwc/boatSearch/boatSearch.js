@@ -1,5 +1,5 @@
 // imports
-import { LightningElement } from "lwc";
+import { LightningElement, track } from "lwc";
 import {
   APPLICATION_SCOPE,
   publish,
@@ -8,16 +8,16 @@ import {
 import BOATMC from "@salesforce/messageChannel/BoatMessageChannel__c";
 import { NavigationMixin } from "lightning/navigation";
 export default class BoatSearch extends NavigationMixin(LightningElement) {
-  isLoading = false;
+  @track isLoading = false;
 
   // Handles loading event
-  handleLoading() {
-    isLoading = true;
+  handleLoading(event) {
+    this.isLoading = true;
   }
 
   // Handles done loading event
-  handleDoneLoading() {
-    isLoading = false;
+  handleDoneLoading(event) {
+    this.isLoading = false;
   }
 
   // Handles search boat event
