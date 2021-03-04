@@ -9,15 +9,19 @@
           slot="actions"
         ></lightning-button>
         <p class="slds-var-p-horizontal_small">
-          <c-boat-search-form></c-boat-search-form>
+          <c-boat-search-form onsearch={searchBoats}></c-boat-search-form>
         </p>
       </lightning-card>
     </lightning-layout-item>
     <!-- Bottom -->
     <lightning-layout-item size="12" class="slds-p-top_small slds-is-relative">
-      <!--            <lightning-spinner alternative-text="Loading"></lightning-spinner>-->
-      <!-- boatSearchResults goes here -->
-      <!-- onloading={handleLoading} ondoneloading={handleDoneLoading} -->
+      <template if:true={isLoading}>
+        <lightning-spinner
+          alternative-text="Loading"
+          variant="brand"
+        ></lightning-spinner>
+      </template>
+      <c-boat-search-results></c-boat-search-results>
     </lightning-layout-item>
   </lightning-layout>
 </template>
